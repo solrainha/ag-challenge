@@ -1,3 +1,9 @@
+iframe.tmblr-iframe--gdpr-banner{
+	display:none!important;
+	visibility:hidden!important;
+	opacity:0!important;
+}
+
 html{
     font-size:16px;
 }
@@ -11,6 +17,7 @@ body{
 main{
     margin:20vh auto;
     width:90vw;
+	overflow:hidden;
 }
 
 code{
@@ -422,9 +429,6 @@ label {
     display: block;
     margin: 20px 0;
 }
-textarea#assunto {
-    width: 96%;
-}
 
 .nl-form input[type=text], .nl-form select, .nl-form textarea {
   width: 100%;
@@ -578,6 +582,9 @@ a.social:hover .fab {
 @media only screen and (max-width: 600px) {
 nav{display:none;}
 .mobile-nav{display:block!important;}
+input[type="submit"]{
+	width:auto;
+}
 #steps-wrapper .steps-content .steps-col {
     display: block;
     width: 70%;
